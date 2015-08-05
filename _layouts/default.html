@@ -7,9 +7,49 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div id="main-wrapper" class="sidebar clear-block">
+      <div class="container">
+        <div id="main-wrapper-inner">
+          <div class="banner">
+            <img src="http://www.lucyethelsales.com/sites/lucyethelsales.com/themes/lucyethel/images/banner.png" alt=""/>
+          </div>
+          <div id="sidebar-left">
+            <div id="block-menu-primary-links" class="block menu">
+              <div class="content">
+                <ul class="menu">
+                  <li class="leaf first dhtml-menu "><a href="{{ '/' | prepend: site.baseurl }}" {% if page.url == '/index.html' %}class="active"{% endif %} title="" id="dhtml_menu-121">Home</a></li>
+                  <li class="leaf  dhtml-menu "><a href="http://www.estatesale.com/companies/view/2313/LUCY-&amp;-ETHEL-DO-ESTATE-SALES!.html" target="_blank" title="" id="dhtml_menu-549">My EstateSale.com Page</a></li>
+                  <li class="leaf  dhtml-menu "><a href="http://www.estatesales.net/estate-sale-companies/2567.aspx" target="_blank" title="" id="dhtml_menu-237">My EstateSales.NET Company Page</a></li>
+                  <li class="leaf  dhtml-menu "><a href="http://www.24-7estatesales.com/susan_callicott_bio.html" target="_blank" title="" id="dhtml_menu-536">My 24-7estatesales.com Page</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/about-us' | prepend: site.baseurl }}" {% if page.url == '/about-us/' %}class="active"{% endif %} title="" id="dhtml_menu-129">About Us</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/getting-started' | prepend: site.baseurl }}" {% if page.url == '/getting-started/' %}class="active"{% endif %} title="Getting Started" id="dhtml_menu-546">Getting Started</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/faq' | prepend: site.baseurl }}" {% if page.url == '/faq/' %}class="active"{% endif %} title="" id="dhtml_menu-123">FAQ</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/estate-sale-process' | prepend: site.baseurl }}" {% if page.url == '/estate-sale-process/' %}class="active"{% endif %} title="" id="dhtml_menu-215">Estate Sale Process</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/dont-throw-it-away' | prepend: site.baseurl }}" {% if page.url == '/dont-throw-it-away/' %}class="active"{% endif %} title="" id="dhtml_menu-127">Don't Throw It Away!</a></li>
+                  <li class="leaf  dhtml-menu "><a href="{{ '/galleries' | prepend: site.baseurl }}" {% if page.url == '/galleries/' %}class="active"{% endif %} title="" id="dhtml_menu-125">Galleries</a></li>
+                  <li class="leaf last dhtml-menu "><a href="{{ '/contact' | prepend: site.baseurl }}" {% if page.url == '/contact/' %}class="active"{% endif %} title="" id="dhtml_menu-213">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="block-block-1" class="block block">
+              <h2 class="block-subject">Contact Us</h2>
+
+              <div class="content">
+                <p><img src="{{ '/images' | prepend: site.baseurl }}/contact-me.jpg" alt=""></p>
+
+                <p><span class="green">Phone Number :</span> 972.234.3823<br>
+                  <span class="green">Email :</span> <a
+                    href="mailto:%3Cscript%3Edocument.write%28String.fromCharCode%2860,97,32,104,114,101,102,61,39,109,97,105,108,116,111,58,115,99,97,108,51,54,64,116,120,46,114,114,46,99,111,109,39,62,115,99,97,108,51,54,64,116,120,46,114,114,46,99,111,109,60,47,97,62%29%29;%3C/script%3E">
+                    <script>document.write(String.fromCharCode(60, 97, 32, 104, 114, 101, 102, 61, 39, 109, 97, 105, 108, 116, 111, 58, 115, 99, 97, 108, 51, 54, 64, 116, 120, 46, 114, 114, 46, 99, 111, 109, 39, 62, 115, 99, 97, 108, 51, 54, 64, 116, 120, 46, 114, 114, 46, 99, 111, 109, 60, 47, 97, 62));</script>
+                  </a></p>
+              </div>
+            </div>
+          </div>
+
+          {{ content }}
+
+          <div class="clear-block"><!-- --></div>
+        </div>
       </div>
     </div>
 

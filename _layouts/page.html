@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div id="main">
+  <h1 class="title" id="page-title">{{ page.title }}</h1>
+  <div class="clear-block"><!-- --></div>
+  <div id="content" class="clear-block">
+    <div id="node-1" class="node clear-block">
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
 </div>
